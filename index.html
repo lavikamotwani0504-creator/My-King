@@ -1,0 +1,1053 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before We Became Us ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at center, #3b1727 0%, #160b12 55%, #080609 100%);
+            color: #f7e8d5;
+            font-family: Georgia, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .welcome {
+            padding: 30px;
+            animation: appear 2s ease;
+        }
+
+        .small-text {
+            color: #c9a66b;
+            letter-spacing: 5px;
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: #e5c58c;
+            font-size: clamp(35px, 7vw, 65px);
+            letter-spacing: 4px;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #e8d6c5;
+            margin-bottom: 12px;
+        }
+
+        button {
+            margin-top: 35px;
+            padding: 16px 38px;
+            border: 1px solid #c9a66b;
+            border-radius: 40px;
+            background: transparent;
+            color: #f5dfb8;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        button:hover {
+            background: #8c3c55;
+            transform: scale(1.06);
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .temple-scene {
+    position: fixed;
+    inset: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    width: 100%;
+    background:
+        linear-gradient(
+            rgba(10, 5, 8, 0.45),
+            rgba(10, 5, 8, 0.65)
+        ),
+        url("/Users/loviesfile/Desktop/Before We Became Us/golden-temple.png") center center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.temple-content {
+    max-width: 850px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 12px #16090b;
+}
+
+.temple-caption {
+    color: #e5c58c;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .temple-scene {
+        padding: 20px 16px;
+        background-position: 58% center;
+    }
+
+    .temple-caption {
+        font-size: 16px;
+    }
+ }
+
+.snap-notification {
+    max-width: 380px;
+    margin: 25px auto;
+    padding: 18px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 18px;
+    text-align: left;
+    animation: notificationPop 0.7s ease;
+}
+
+.snap-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.snap-icon {
+    font-size: 24px;
+}
+
+.snap-time {
+    margin-left: auto;
+    color: #c9b7b7;
+}
+
+.snap-notification h3 {
+    margin-bottom: 5px;
+    color: #f2c879;
+}
+
+.snap-notification p {
+    margin-top: 5px;
+}
+
+.chat-message {
+    max-width: 75%;
+    margin: 18px auto 18px 0;
+    padding: 14px;
+    background: #38232d;
+    border-radius: 15px 15px 15px 3px;
+    text-align: left;
+    animation: notificationPop 0.6s ease both;
+}
+
+.my-message {
+    margin: 18px 0 18px auto;
+    background: #75513e;
+    border-radius: 15px 15px 3px 15px;
+}
+
+.chat-name {
+    color: #f2c879;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@keyframes notificationPop {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.story-slideshow {
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-line {
+    max-width: 750px;
+    font-size: clamp(28px, 5vw, 52px);
+    line-height: 1.35;
+    text-align: center;
+    animation: cinematicEntry 1.2s ease both;
+}
+
+.story-line.left {
+    text-align: left;
+    align-self: flex-start;
+}
+
+.story-line.right {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.slide-count {
+    margin-top: 35px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    opacity: 0.55;
+}
+
+@keyframes cinematicEntry {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.flower-petal {
+    position: absolute;
+    top: -30px;
+    font-size: 22px;
+    pointer-events: none;
+    animation: petalFall 4s linear forwards;
+}
+
+@keyframes petalFall {
+    from {
+        transform: translateY(-20px) rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(420px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#chat-area {
+    width: 100%;
+    max-width: 480px;
+    margin: 25px auto;
+}
+
+#chat-area .chat-message {
+    animation: cinematicEntry 0.6s ease both;
+}
+
+.blurred-chats {
+    max-width: 380px;
+    margin: 25px auto;
+    display: grid;
+    gap: 12px;
+}
+
+.blurred-chats div {
+    padding: 15px;
+    background: rgba(255,255,255,0.13);
+    border-radius: 15px;
+    filter: blur(3px);
+    color: #f1d4dc;
+    animation: cinematicEntry 1s ease both;
+}
+
+.blurred-chats div:nth-child(even) {
+    margin-left: 45px;
+}
+
+#chat-area .chat-message p {
+    overflow-wrap: anywhere;
+}
+.letter-choice {
+    background: #24151d;
+    border: 1px solid #b89562;
+    border-radius: 16px;
+    padding: 22px;
+    max-width: 420px;
+    margin: 15px auto;
+    color: #f5e6d3;
+    cursor: pointer;
+    text-align: center;
+}
+
+.letter-choice:hover {
+    background: #49303b;
+    transform: scale(1.02);
+}
+.envelope {
+    width: 230px;
+    height: 150px;
+    margin: 35px auto;
+    background: #6d263e;
+    border: 2px solid #c9a36b;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px #a66a5b55;
+    animation: envelopeGlow 2s infinite alternate;
+}
+
+.envelope::before {
+    content: "♥";
+    color: #e7c28c;
+    font-size: 45px;
+}
+
+@keyframes envelopeGlow {
+    from { box-shadow: 0 0 12px #a66a5b33; }
+    to { box-shadow: 0 0 35px #c99b6b88; }
+}
+
+.letter-paper {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 28px;
+    background: #f4e8d5;
+    color: #39232a;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.9;
+    animation: cinematicEntry 1s ease;
+}
+
+.letter-paper p {
+    margin-bottom: 18px;
+}
+/* Keep all normal slides centered */
+.welcome {
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Only the letter screen should scroll */
+.welcome:has(.letter-paper) {
+    height: 100vh;
+    overflow-y: auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 20px 16px 35px;
+}
+
+.letter-paper {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+#letter-content {
+    max-height: 55vh;
+    overflow-y: auto;
+    padding: 5px 8px 15px;
+}
+
+#next-letter {
+    position: sticky;
+    bottom: 8px;
+    display: block;
+    margin: 15px auto 5px;
+    z-index: 10;
+}
+.back-button {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background: transparent;
+    color: #d4af72;
+    border: 1px solid #d4af72;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+    </style>
+</head>
+
+<body>
+<audio id="backgroundMusic" loop>
+    <source src="our-love-music.m4a" type="audio/mp4">
+</audio>
+    <div class="welcome">
+        <p class="small-text">A STORY WRITTEN IN THE STARS</p>
+
+        <h1>BEFORE WE<br>BECAME US</h1>
+
+        <p class="subtitle">
+            Some stories are written<br>
+            before we even meet.
+        </p>
+
+        <p class="subtitle">
+            A little world made only for you, Baby ❤️
+        </p>
+
+        <button onclick="startStory()">
+            ENTER OUR STORY
+        </button>
+    </div>
+
+    
+<script>
+    const music = document.getElementById("backgroundMusic");
+music.volume = 0.1;
+music.play().catch(() => {});
+    function showLetterChoice() {
+    document.querySelector(".welcome").innerHTML = `
+        <div class="story-slideshow">
+            <h1>A LITTLE SOMETHING FOR YOU ❤️</h1>
+            <p>How would you like to receive this letter, King Thadani?</p>
+
+            <div class="letter-choice" onclick="playMyVoice()">
+                <h2>🎧 In Lovey Dovey's Voice</h2>
+                <p>Let Lovey Dovey read it to you.</p>
+            </div>
+
+            <div class="letter-choice" onclick="readLetter()">
+                <h2>💌 I'll Read It Myself</h2>
+                <p>Open the letter and read every word.</p>
+            </div>
+
+            <p>A little piece of Lovey Dovey, whichever way you choose. ❤️</p>
+        </div>
+    `;
+}
+
+function playMyVoice() {
+    displayLetter(true);
+}
+function displayLetter(withVoice) {
+    document.querySelector(".welcome").innerHTML = `
+        <div class="letter-paper">
+            <button onclick="showLetterChoice()">← BACK</button>
+
+            <h2>To my favourite person, Kannak Raj ❤️</h2>
+
+            ${withVoice ? `
+                <p>A little piece of my voice, just for you. ❤️</p>
+                <audio id="loveyVoice" controls autoplay>
+                    <source src="lovey-dovey-letter.m4a" type="audio/mp4">
+                </audio>
+            ` : ""}
+
+            <div id="letter-content"></div>
+            <button onclick="showQuizIntro()">
+    CONTINUE OUR STORY ❤️
+</button>
+        </div>
+    `;
+
+    const content = document.getElementById("letter-content");
+
+    letterParagraphs.forEach(paragraph => {
+        const p = document.createElement("p");
+        p.textContent = paragraph;
+        content.appendChild(p);
+    });
+
+    if (withVoice) {
+        const audio = document.getElementById("loveyVoice"); 
+        audio.play().catch(() => {});
+    }
+}
+function readLetter() {
+    document.querySelector(".welcome").innerHTML = `
+        <h1>MY DEAREST KING THADANI ❤️</h1>
+        <p>Your letter is waiting to be opened...</p>
+        <button onclick="openWrittenLetter()">OPEN YOUR LETTER 💌</button>
+    `;
+}
+    function startStory() {
+        document.querySelector(".welcome").innerHTML = `
+            <p class="small-text">JUST ONE LITTLE QUESTION</p>
+
+            <h1>WAIT A MINUTE,<br>KING THADANI...</h1>
+
+            <p class="subtitle">
+                Are you really ready to relive our story?
+            </p>
+
+            <div class="choice-buttons">
+                <button onclick="beginStory()">YES ❤️</button>
+                <button class="no-button" onclick="dodgeNo(this)">NO 🙃</button>
+            </div>
+        `;
+    }
+    function dodgeNo(button) {
+        button.innerText = "Nice try, mister! 😂";
+
+        const x = Math.random() * 80 - 40;
+        const y = Math.random() * 40 - 20;
+
+        button.style.transform = `translate(${x}px, ${y}px)`;
+    }
+
+    
+function beginStory() {
+    document.querySelector(".welcome").innerHTML = `
+        <div class="temple-scene">
+            <div class="temple-content">
+                <p class="small-text">
+                    CHAPTER ONE · 5 NOVEMBER 2025
+                </p>
+
+                <h1>MAYBE IT WAS<br>WAHEGURU'S PLAN.</h1>
+
+                <p class="subtitle">
+                    Of all the days, all the places,<br>
+                    and all the possibilities...
+                </p>
+
+                <p class="subtitle">
+                    Somehow, our paths crossed that day. ❤️
+                </p>
+
+                <p class="temple-caption">
+                    And neither of us knew<br>
+                    that this was the beginning of us.
+                </p>
+
+                <button onclick="showFirstConversation()">
+                    RELIVE THAT DAY →
+                </button>
+            </div>
+        </div>
+    `;
+}
+
+let storySlideTimer;
+let storySlideIndex = 0;
+
+const conversationSlides = [
+    { text: "Some stories are written by destiny...", align: "center" },
+    { text: "Ours took a little longer to begin.", align: "center" },
+    { text: "You tried talking to me since February...", align: "center" },
+    { text: "And I ignored you for MONTHS. 😂", align: "center" },
+    { text: "Sorry, Kannak!", align: "right" },
+    { text: "Then came 5 November 2025.", align: "center" },
+    { text: "One message changed everything.", align: "center" },
+    { text: "And this time... I REPLIED. ❤️", align: "center" }
+];
+
+function showFirstConversation() {
+    storySlideIndex = 0;
+    renderConversationSlide();
+}
+
+function renderConversationSlide() {
+    clearTimeout(storySlideTimer);
+
+    const screen = document.querySelector(".welcome");
+    const current = conversationSlides[storySlideIndex];
+
+    screen.innerHTML = `
+        <div class="story-slideshow">
+            <button class="back-button" onclick="previousStorySlide()">← BACK</button>
+
+            <p class="small-text">5 NOVEMBER 2025</p>
+
+            <h1 class="story-line ${current.align}">
+                ${current.text}
+            </h1>
+
+            <p class="slide-count">${storySlideIndex + 1} / 8</p>
+        </div>
+    `;
+
+    if (storySlideIndex === 7) {
+        for (let i = 0; i < 22; i++) {
+            const petal = document.createElement("span");
+            petal.className = "flower-petal";
+            petal.textContent = "🌸";
+            petal.style.left = Math.random() * 100 + "%";
+            petal.style.animationDelay = Math.random() * 2 + "s";
+            screen.querySelector(".story-slideshow").appendChild(petal);
+        }
+    }
+
+    if (storySlideIndex < 7) {
+        storySlideTimer = setTimeout(() => {
+            storySlideIndex++;
+            renderConversationSlide();
+        }, 3000);
+    } else {
+        storySlideTimer = setTimeout(showConversationEnding, 3500);
+    }
+}
+
+function previousStorySlide() {
+    clearTimeout(storySlideTimer);
+
+    if (storySlideIndex === 0) {
+        beginStory();
+    } else {
+        storySlideIndex--;
+        renderConversationSlide();
+    }
+}
+
+function showConversationEnding() {
+    document.querySelector(".welcome").innerHTML = `
+        <button class="back-button" onclick="renderConversationSlide()">← BACK</button>
+        <h1>AND THEN...</h1>
+        <p class="subtitle">A notification appeared.</p>
+
+        <button onclick="showChatMessages()">
+            SEE THE MESSAGE →
+        </button>
+    `;
+}
+
+function showChatMessages() {
+    const screen = document.querySelector(".welcome");
+
+    const messages = [
+        { name: "Kannak", message: "So, what are you doing?" },
+        { name: "Me", message: "Nothing much 😂" },
+        { name: "Kannak", message: "Then let's talk..." },
+        { name: "Me", message: "We already are! 😂" },
+        { name: "Kannak", message: "Hahaha..." }
+    ];
+
+    let index = 0;
+
+    function showNextMessage() {
+        if (index === 0) {
+            screen.innerHTML = `
+                <p class="small-text">5 NOVEMBER 2025 · LATER THAT NIGHT</p>
+                <h1>AND THEN WE STARTED TALKING...</h1>
+                <div id="chat-area"></div>
+            `;
+        }
+
+        const chatArea = document.getElementById("chat-area");
+        const msg = messages[index];
+
+        chatArea.insertAdjacentHTML("beforeend", `
+            <div class="chat-message ${msg.name === "Me" ? "my-message" : ""}">
+                <p class="chat-name">${msg.name}</p>
+                <p>${msg.message}</p>
+            </div>
+        `);
+
+        index++;
+
+        if (index < messages.length) {
+            setTimeout(showNextMessage, 1100);
+        } else {
+            setTimeout(showTimePassing, 1800);
+        }
+    }
+
+    function showTimePassing() {
+        screen.innerHTML = `
+            <p class="small-text">5 NOVEMBER 2025 · 11:58 PM</p>
+            <h1>AND THE CONVERSATION JUST KEPT GOING...</h1>
+            <div class="blurred-chats">
+                <div>••••••••••••••••••••</div>
+                <div>••••••••••••••••</div>
+                <div>••••••••••••••••••••••</div>
+                <div>••••••••••••••••</div>
+            </div>
+            <p class="subtitle">One message became hours of talking.</p>
+        `;
+
+        setTimeout(showFinalMessage, 4000);
+    }
+
+    function showFinalMessage() {
+        screen.innerHTML = `
+            <p class="small-text">AND SOMEWHERE ALONG THE WAY...</p>
+            <h1>WE JUST NEVER STOPPED TALKING.</h1>
+            <p class="subtitle">
+                We kept talking, laughing, sharing everything...
+            </p>
+            <h1>AND NOW, LOOK AT US. ❤️</h1>
+            <p class="temple-caption">
+                Different cities. Countless memories.<br>
+                And still choosing each other.
+            </p>
+            <button onclick="showNextChapter()">
+                CONTINUE OUR STORY →
+            </button>
+        `;
+    }
+
+    showNextMessage();
+}
+
+function showNextChapter() {
+    showLetterChoice();
+}
+
+const letterParagraphs = [
+    "Hey Baby,",
+
+    "I don't even know where to begin, because how do I put something so special into a few words?",
+
+    "If someone had told me in February 2025 that the boy whose messages I kept ignoring would one day become one of the most important people in my life, I would have probably laughed.",
+
+    "You kept trying, and I kept ignoring you. 😂",
+
+    "And then came 5th November 2025.",
+
+    "Maybe for you, it was just another message. Maybe you thought you were simply trying your luck one more time. But little did either of us know that one reply would change so much.",
+
+    "Sometimes I wonder how beautifully Waheguru Ji plans things. You were at the Gurudwara, you saw my cousin (Drishti), you saw my Snap, and somehow that moment brought us to a conversation that neither of us knew would become our story.",
+
+    "And today, here I am, writing a letter to the same boy I once didn't even bother replying to.",
+
+    "Funny, isn't it, King Thadani? ❤️",
+
+    "I want you to know something. I don't think you realise how much your presence has changed things for me. You have supported me, motivated me, believed in me, and reminded me that I am capable of so much more than I thought.",
+
+    "You didn't just become someone I love. You became someone who helped me become someone I am proud of.",
+
+    "And that's something I will always be grateful for.",
+
+    "I wish I could go back to that first conversation and tell that girl, 'Please reply properly this time. You have no idea who is about to enter your life.'",
+
+    "But maybe that's the beauty of it. We didn't know. We weren't planning anything. We were just two people who somehow found their way to each other.",
+
+    "I don't know what Waheguru has written for us. I don't know what every coming chapter will look like. But I do know that I want to keep discovering it with you.",
+
+    "So, Baby, thank you for trying when I wasn't making it easy, for believing in me when I struggled to believe in myself, and for being you.",
+
+    "This is only the first letter, and definitely not the last chapter.",
+
+    "With all my love,\nYour girl. ❤️",
+
+    "P.S. You should feel lucky. Not everyone gets a girl who ignores them for months and then makes an entire website for them. 😂💋"
+];
+
+function openWrittenLetter() {
+    document.querySelector(".welcome").innerHTML = `
+        <h1>FOR MY KING THADANI ❤️</h1>
+        <div class="envelope"></div>
+        <p>Your letter is opening...</p>
+        <button onclick="revealLetter()">OPEN THE LETTER 💌</button>
+    `;
+}
+
+let letterIndex = 0;
+
+function revealLetter() {
+    letterIndex = 0;
+
+    document.querySelector(".welcome").innerHTML = `
+        <div class="letter-paper">
+            <h2>To my favourite person, Kannak Raj ❤️</h2>
+            <div id="letter-content"></div>
+            <button id="next-letter" onclick="nextLetterParagraph()">
+                NEXT ❤️
+            </button>
+        </div>
+    `;
+
+    nextLetterParagraph();
+}
+
+function nextLetterParagraph() {
+    const content = document.getElementById("letter-content");
+
+    if (letterIndex < letterParagraphs.length) {
+        const p = document.createElement("p");
+        p.textContent = letterParagraphs[letterIndex];
+        content.appendChild(p);
+        letterIndex++;
+    }
+
+    if (letterIndex >= letterParagraphs.length) {
+        document.getElementById("next-letter").textContent = "CONTINUE OUR STORY →";
+        document.getElementById("next-letter").onclick = showQuizIntro;
+    }
+}
+function showQuizIntro() {
+    const screen = document.querySelector(".welcome");
+
+    screen.innerHTML = `
+        <div class="quiz-intro">
+            <p class="small-text">A LITTLE CHALLENGE FOR YOU</p>
+
+            <h1>HOW WELL DO YOU KNOW YOUR GIRL?</h1>
+
+            <p class="subtitle">
+                Let's put that memory to the test,
+                Babudi...
+            </p>
+
+            <p class="quiz-description">
+                3 Questions. No cheating. No excuses. 😂
+            </p>
+
+            <button onclick="startQuiz()">
+                LET'S PLAY ❤️
+            </button>
+        </div>
+    `;
+}
+let currentQuestion = 0;
+
+const quizQuestions = [
+    {
+        question: "Where did you once order tiramisu from?",
+        options: [
+            "From your favourite tiramisu source ❤️",
+            "From a certain girl who probably had a little crush on you 👀"
+        ],
+        optionAMessage: "Awww, you remembered! I hope you know there's always a little extra love in every bite I make for you. ❤️",
+        optionBMessage: "Ohhh, so you STILL remember her? Interesting, King Thadani. I see some memories are hard to forget. 😂"
+    },
+    {
+        question: "What made our first meeting on 17th November 2025 unforgettable?",
+        options: [
+            "A bike ride, coffee, dosa and a little confession. ❤️",
+            "When Papa caught us! 😭😂"
+        ],
+        optionAMessage: "That day will always be special to me. From that bike ride to coffee, dosa and our little confession… I wish I could relive that day with you. ❤️",
+        optionBMessage: "PAPA?! 😭😂 Some memories are unforgettable for VERY different reasons, Am i right? or DAMN RIGHT!😂"
+    },
+    {
+        question: "What made 13th December 2025 so special?",
+        options: [
+            "We wore matching Messi jerseys with number 24. ⚽❤️",
+            "I gave you my little confession. 🥹"
+        ],
+        optionAMessage: "Our matching Messi jerseys and number 24! I'll always remember that day, Baby. ❤️",
+        optionBMessage: "That little confession was straight from my heart. I never fell in love with you. I rose in love with you. ❤️"
+    }
+];
+
+function startQuiz() {
+    currentQuestion = 0;
+    showQuestion();
+}
+
+function showQuestion() {
+    const q = quizQuestions[currentQuestion];
+    const screen = document.querySelector(".welcome");
+
+    screen.innerHTML = `
+        <div class="quiz-intro">
+            <p class="small-text">QUESTION ${currentQuestion + 1} OF 5</p>
+            <h1>${q.question}</h1>
+
+            <div class="quiz-options">
+                ${q.options.map((option, index) => `
+                    <button onclick="checkAnswer(${index})">
+                        ${option}
+                    </button>
+                `).join("")}
+            </div>
+        </div>
+    `;
+}
+
+function checkAnswer(selected) {
+    const q = quizQuestions[currentQuestion];
+    const screen = document.querySelector(".welcome");
+
+    const message = currentQuestion === 0
+        ? (selected === 0
+            ? "Awww, you remembered! I hope you know there's always a little extra love in every bite I make for you. ❤️"
+            : "Ohhh, so you STILL remember her? Interesting, Mr. Kannak Gopal Thadani. I see some memories are hard to forget. 😂")
+        : (selected === 0
+            ? q.optionAMessage
+            : q.optionBMessage);
+
+    const heading = currentQuestion === 0
+        ? (selected === 0 ? "MY BABY! ❤️" : "WRONG ANSWER! 😭")
+        : (selected === 0 ? "MY BABY! ❤️" : "EXCUSE ME?! 😭😂");
+
+    screen.innerHTML = `
+        <div class="quiz-intro">
+            <h1>${heading}</h1>
+            <p class="subtitle">${message}</p>
+            <button onclick="nextQuestion()">CONTINUE →</button>
+        </div>
+    `;
+}
+function nextQuestion() {
+    currentQuestion++;
+
+    if (currentQuestion < quizQuestions.length) {
+        showQuestion();
+    }  else {
+    showQuizFinal();
+}
+}
+function showQuizFinal() {
+    const screen = document.querySelector(".welcome");
+
+    screen.innerHTML = `
+        <div class="quiz-intro">
+            <p class="small-text">QUIZ COMPLETED ❤️</p>
+
+            <h1>LOOK AT YOU, Baby </h1>
+
+            <p class="subtitle">
+                You remember more than you pretend to.
+            </p>
+
+            <h2>Now come collect your reward. 💋</h2>
+
+            <button onclick="showComingSoon()">
+    CLAIM YOUR REWARD ❤️
+</button>
+        </div>
+    `;
+}
+function showComingSoon() {
+    const screen = document.querySelector(".welcome");
+
+    screen.innerHTML = `
+        <div style="
+            width: 100%;
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 35px 20px;
+            background-image:
+                linear-gradient(
+                    rgba(12, 5, 12, 0.58),
+                    rgba(12, 5, 12, 0.68)
+                ),
+                url('last-photo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        ">
+
+            <p style="
+                color: #e8c990;
+                letter-spacing: 4px;
+                font-size: 12px;
+                margin-bottom: 25px;
+            ">
+                BEFORE WE BECAME US
+            </p>
+
+            <h1 style="
+                color: #f5dfb5;
+                font-size: clamp(30px, 5vw, 58px);
+                letter-spacing: 2px;
+                line-height: 1.2;
+                margin: 0 0 45px;
+            ">
+                OUR STORY ISN'T<br>OVER YET...
+            </h1>
+
+            <p style="
+                color: #e8c990;
+                letter-spacing: 5px;
+                font-size: 12px;
+            ">
+                CHAPTER 02
+            </p>
+
+            <h1 style="
+                color: #e8c990;
+                font-size: clamp(35px, 6vw, 65px);
+                letter-spacing: 3px;
+                margin: 12px 0 25px;
+            ">
+                COMING SOON...
+            </h1>
+
+            <p style="
+                color: #ffffff;
+                font-size: 16px;
+                line-height: 1.8;
+                max-width: 550px;
+            ">
+                The first chapter was about how we met.
+                The next one is about everything waiting for us.
+            </p>
+
+            <p style="
+                color: #f0d5a2;
+                font-style: italic;
+                font-size: 15px;
+                line-height: 1.8;
+                max-width: 500px;
+                margin-top: 20px;
+            ">
+                We have a thousand more memories to make,
+                places to see, and moments to live.
+            </p>
+
+            <h2 style="
+                color: #f5dfb5;
+                font-size: clamp(17px, 3vw, 24px);
+                margin-top: 35px;
+            ">
+                TO BE CONTINUED, MY LOVE. ❤️
+            </h2>
+
+            <p style="
+                color: #e8c990;
+                letter-spacing: 4px;
+                font-size: 11px;
+                margin-top: 20px;
+            ">
+                05 NOVEMBER 2026 · ALWAYS US
+            </p>
+
+        </div>
+    `;
+}
+</script>
+
+</body>
+</html>
