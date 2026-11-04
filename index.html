@@ -436,9 +436,6 @@
 
     
 <script>
-    const music = document.getElementById("backgroundMusic");
-music.volume = 0.1;
-music.play().catch(() => {});
     function showLetterChoice() {
     document.querySelector(".welcome").innerHTML = `
         <div class="story-slideshow">
@@ -473,7 +470,7 @@ function displayLetter(withVoice) {
             ${withVoice ? `
                 <p>A little piece of my voice, just for you. ❤️</p>
                 <audio id="loveyVoice" controls autoplay>
-                    <source src="Lovey-dovey-letter.m4a" type="audio/mp4">
+                    <source src="./Lovey-dovey-letter.m4a" type="audio/mp4">
                 </audio>
             ` : ""}
 
@@ -531,6 +528,9 @@ function readLetter() {
 
     
 function beginStory() {
+        const music = document.getElementById("backgroundMusic");
+    music.volume = 0.1;
+    music.play().catch(error => console.log("Music playback:", error));
     document.querySelector(".welcome").innerHTML = `
         <div class="temple-scene">
             <div class="temple-content">
