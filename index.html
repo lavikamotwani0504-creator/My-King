@@ -529,7 +529,8 @@ function readLetter() {
     
 function beginStory() {
         const music = document.getElementById("backgroundMusic");
-    music.volume = 0.1;
+    music.volume = 0.03;
+    music.playbackRate = 0.90;
     music.play().catch(error => console.log("Music playback:", error));
     document.querySelector(".welcome").innerHTML = `
         <div class="temple-scene">
